@@ -1,7 +1,10 @@
 student_name = input()
-while student_name != "Welcome!":
+while True:
+    if student_name == "Welcome!":
+        print(f"Welcome to Hogwarts.")
+        break
     if student_name == "Voldemort":
-        print("You must not speak off that name!")
+        print("You must not speak of that name!")
         break
     if len(student_name) < 5:
         print(f"{student_name} goes to Gryffindor.")
@@ -12,4 +15,4 @@ while student_name != "Welcome!":
     if len(student_name) > 6:
         print(f"{student_name} goes to Hufflepuff.")
     student_name = input()
-print(f"Welcome to Hogwarts.")
+    
