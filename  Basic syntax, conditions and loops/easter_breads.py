@@ -11,7 +11,7 @@ while remaining_budget > bread_price:
     bread += 1
     colored_eggs += 3
     if bread % 3 == 0:
-        colored_eggs -= 2
+        colored_eggs -= bread - 2
 
 print(f"You made {bread} loaves of Easter bread! Now you have {colored_eggs} eggs and {remaining_budget:.2f}BGN left")
 
