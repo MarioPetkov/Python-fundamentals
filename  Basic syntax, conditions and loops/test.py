@@ -1,5 +1,4 @@
-a = 6
-b = 2 
-if a % 4 == 0:
-    print("black")
-    
+a =int(input())
+b =int(input())
+for number in range(a, b+1):
+    print(end = " ", chr(number))
