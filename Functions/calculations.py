@@ -1,12 +1,13 @@
 def calculations(operator, a, b):
     if operator == "multiply":
-        return a * b
+        result = a * b
     if operator == "divide":
-        return int(a / b)
+        result = int(a / b)
     if operator == "add":
-        return a + b
-    if operator == "distract":
-        return a - b
+        result = a + b
+    if operator == "subtract":
+        result = a - b
+    return result
 
 
 input_operator = input()
